@@ -5,76 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+
+
 </head>
 
 <body>
     <header>
         <h1>Ilya Lukichev</h1>
         <div class="logo"></div>
-        <nav>
-            <a href="">Обо мне</a>
-            <a href="">Портфолио</a>
-            <a href="">Навыки</a>
-            <a href="">Контакты</a>
+        <nav class='header__navigation'>
+            <a class='navigation__link' href="">Обо мне</a>
+            <a class='navigation__link' href="">Портфолио</a>
+            <a class='navigation__link' href="">Навыки</a>
+            <a class='navigation__link' href="">Контакты</a>
         </nav>
     </header>
     <main>
         <div class="container">
             <section class="title">
                 <img src="" alt="My photo">
-                <div class='title_block-name'>
-                    <h2 class="name">Я Ilya Lukichev</h2>
-                    <span class="line"></span>
-                    <p class="profession">Front-end разработчик</p>
+                <div class='title__block-name'>
+                    <h2 class="title__name">Я <span>Ilya Lukichev</span></h2>
+                    <span class="title__line"></span>
+                    <p class="title__profession">Front-end разработчик</p>
                 </div>
             </section>
             <section class="about">
                 <h3>Немного о себе</h3>
-                <ul class="about_list">
-                    <li class="about_item travel">
-                        <img src="" alt="" class="about_image">
-                        <p class="about_text"></p>
+                <ul class="about__list">
+                    <li class="about__item travel">
+                        <h4 class="about__item__title"></h4>
+                        <img src="" alt="" class="about__image">
+                        <p class="about__text"></p>
                     </li>
-                    <li class="about_item hobby">
-                        <img src="" alt="" class="about_image">
-                        <p class="about_text"></p>
-                    </li>
-                    <li class="about_item goals">
-                        <img src="" alt="" class="about_image">
-                        <p class="about_text"></p>
+                    <li class="about__item goals">
+                        <h4 class="about__item__title goals__title"></h4>
+                        <img src="img/OCCNFD0.jpg" alt="To Do List" class="about__image goals__img" width='320' height="400">
+                        <p class="about__text"></p>
                     </li>
                 </ul>
             </section>
             <section class="skills">
-                <h3 class="skills_title">Умения и навыки</h3>
-                <ul class="skills_list"></ul>
-                <li class="skills_item">
-                    <div class="item_img">
-                        <div class="item_img"></div>
-                        <h4 class="item_title"></h4>
+                <h3 class="skills__title">Умения и навыки</h3>
+                <ul class="skills__list"></ul>
+                <li class="skills__item">
+                    <div class="item__img">
+                        <div class="item__img"></div>
+                        <h4 class="item__title"></h4>
                     </div>
-                    <p class="skills-text"></p>
+                    <p class="skills__text"></p>
                 </li>
-                <li class="skills_item">
-                    <div class="item_img-title">
-                        <div class="img"></div>
-                        <h4 class="item_title"></h4>
+                <li class="skills__item">
+                    <div class="item__img-title">
+                        <div class="item__img"></div>
+                        <h4 class="item__title"></h4>
                     </div>
-                    <p class="skills-text"></p>
+                    <p class="skills__text"></p>
                 </li>
-                <li class="skills_item">
-                    <div class="item_img">
-                        <div class="item_img"></div>
-                        <h4 class="item_title"></h4>
+                <li class="skills__item">
+                    <div class="item__img">
+                        <div class="item__img"></div>
+                        <h4 class="item__title"></h4>
                     </div>
-                    <p class="skills-text"></p>
+                    <p class="skills__text"></p>
                 </li>
             </section>
-            <section class="portfolio"></section>
+            <section class="portfolio">
+                <ul class="portfolio__list">
+                    <li class="protfolio__item">
+                        <div class="portfolio__img"></div>
+                        <div class="portfolio__text"></div>
+                    </li>
+                    <li class="protfolio__item">
+                        <div class="portfolio__img"></div>
+                        <div class="portfolio__text"></div>
+                    </li>
+                    <li class="protfolio__item">
+                        <div class="portfolio__img"></div>
+                        <div class="portfolio__text"></div>
+                    </li>
+                    <li class="protfolio__item">
+                        <div class="portfolio__img"></div>
+                        <div class="portfolio__text"></div>
+                    </li>
+                    <li class="protfolio__item">
+                        <div class="portfolio__img"></div>
+                        <div class="portfolio__text"></div>
+                    </li>
+                </ul>
+            </section>
         </div>
-
     </main>
+    <footer>
+        <div class="contacts"></div>
+    </footer>
 </body>
 
 </html>
