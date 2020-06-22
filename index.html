@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 
 
@@ -16,43 +16,45 @@
 
 <body>
     <header>
-        <h1>Ilya Lukichev</h1>
-        <div class="logo"></div>
-        <nav class='header__navigation'>
-            <a class='navigation__link' href="">Обо мне</a>
-            <a class='navigation__link' href="">Портфолио</a>
-            <a class='navigation__link' href="">Навыки</a>
-            <a class='navigation__link' href="">Контакты</a>
-        </nav>
+        <div class="header__top">
+            <a href="" class="header__logo"></a>
+            <nav class='header__navigation'>
+                <a class='navigation__link' href="">Обо мне</a>
+                <a class='navigation__link' href="">Портфолио</a>
+                <a class='navigation__link' href="">Навыки</a>
+                <a class='navigation__link' href="">Контакты</a>
+            </nav>
+        </div>
+        <div class="header__title">
+            <p class="title__profession">Front-end разработчик</p>
+            <h1 class="title__name">Ilya Lukichev</h1>
+        </div>
     </header>
     <main>
-        <div class="container">
-            <section class="title">
-                <img src="" alt="My photo">
-                <div class='title__block-name'>
-                    <h2 class="title__name">Я <span>Ilya Lukichev</span></h2>
-                    <span class="title__line"></span>
-                    <p class="title__profession">Front-end разработчик</p>
-                </div>
-            </section>
-            <section class="about">
-                <h3>Немного о себе</h3>
-                <ul class="about__list">
-                    <li class="about__item travel">
-                        <h4 class="about__item__title"></h4>
-                        <img src="" alt="" class="about__image">
-                        <p class="about__text"></p>
-                    </li>
-                    <li class="about__item goals">
-                        <h4 class="about__item__title goals__title"></h4>
-                        <img src="img/OCCNFD0.jpg" alt="To Do List" class="about__image goals__img" width='320' height="400">
-                        <p class="about__text"></p>
-                    </li>
-                </ul>
-            </section>
-            <section class="skills">
-                <h3 class="skills__title">Умения и навыки</h3>
-                <ul class="skills__list"></ul>
+        <section class="about">
+            <h3 class='section-title'>Несколько фактов о себе</h3>
+            <ul class="about__list">
+                <li class="about__item travel">
+                    <h4 class="about__title">Немного путешественник</h4>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat vel natus adipisci modi dolores vitae earum! Molestiae.</p>
+                </li>
+                <li class="about__item cook">
+                    <h4 class="about__title cook__title">Чуть-чуть повар</h4>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit natus ad ea rerum impedit, a laboriosam, at placeat quo blanditiis</p>
+                </li>
+                <li class="about__item barthender">
+                    <h4 class="about__title bartender__title">Слегка бармен</h4>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aspernatur voluptatibus repudiandae vel, fuga similique mollitia natus praesentium soluta ducimus magni porro</p>
+                </li>
+                <li class="about__item sport">
+                    <h4 class="about__title sport__title">Капельку спортсмен</h4>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corrupti quasi a? Officiis illo aliquid impedit a ab magnam eaque.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h3 class="section-title">Умения и навыки</h3>
+            <ul class="skills__list">
                 <li class="skills__item">
                     <div class="item__img">
                         <div class="item__img"></div>
@@ -74,36 +76,35 @@
                     </div>
                     <p class="skills__text"></p>
                 </li>
-            </section>
-            <section class="portfolio">
-                <ul class="portfolio__list">
-                    <li class="protfolio__item">
-                        <div class="portfolio__img"></div>
-                        <div class="portfolio__text"></div>
-                    </li>
-                    <li class="protfolio__item">
-                        <div class="portfolio__img"></div>
-                        <div class="portfolio__text"></div>
-                    </li>
-                    <li class="protfolio__item">
-                        <div class="portfolio__img"></div>
-                        <div class="portfolio__text"></div>
-                    </li>
-                    <li class="protfolio__item">
-                        <div class="portfolio__img"></div>
-                        <div class="portfolio__text"></div>
-                    </li>
-                    <li class="protfolio__item">
-                        <div class="portfolio__img"></div>
-                        <div class="portfolio__text"></div>
-                    </li>
-                </ul>
-            </section>
-        </div>
+            </ul>
+        </section>
+        <section class="portfolio">
+           <h3 class="section-title">Портфолио</h3>
+            <ul class="portfolio__list">
+                <li class="protfolio__item">
+                    <div class="portfolio__img"></div>
+                    <div class="portfolio__text"></div>
+                </li>
+                <li class="protfolio__item">
+                    <div class="portfolio__img"></div>
+                    <div class="portfolio__text"></div>
+                </li>
+                <li class="protfolio__item">
+                    <div class="portfolio__img"></div>
+                    <div class="portfolio__text"></div>
+                </li>
+                <li class="protfolio__item">
+                    <div class="portfolio__img"></div>
+                    <div class="portfolio__text"></div>
+                </li>
+                <li class="protfolio__item">
+                    <div class="portfolio__img"></div>
+                    <div class="portfolio__text"></div>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer>
         <div class="contacts"></div>
     </footer>
-</body>
-
-</html>
+</body></html>

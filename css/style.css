@@ -1,15 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-weight: 700;
-    font-family: 'Raleway', sans-serif;
+h1 {
+    font-weight: 400;
+    font-family: 'Merriweather Sans', sans-serif;
 }
+
+
 
 a {
     color: white;
@@ -27,104 +31,95 @@ ul {
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    height: 40px;
-    padding: 0 15px;
-    background-color: burlywood;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-h1 {
-    display: none;
-}
-
-h3 {
-    font-size: 26px;
-    letter-spacing: 6px;
-}
-
-.logo {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: saddlebrown;
-}
-
-.navigation_link {
-    margin-left: 15px;
-}
-
-
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    background: url('../img/textile-2918844_1920.jpg') no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
+    min-width: 100%;
+    height: 100vh;
+    background-color: black;
     color: white;
 }
 
-/*.title img{
-    width: 270px;
-    height: 270px;
-    border-radius: 50%
-}*/
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+}
 
+.header__logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
 
-.title_block-name {
+.navigation__link {
+    margin-right: 10px;
+}
+
+.header__title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 105px;
 }
 
-.title_name {
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 14px;
+.title__profession {
+    font-size: 22px;
+    font-family: "Raleway"
 }
 
-.title_name span {
-    font-family: 'Sriracha', cursive;
-
-}
-
-.title_line {
-    display: block;
-    width: 65%;
-    height: 3px;
-    background-color: saddlebrown;
-}
-
-.title_profession {
-    font-size: 30px;
-    font-weight: 300;
+.title__name {
+    margin: 20px;
+    font-size: 85px;
+    letter-spacing: 10px;
     text-transform: uppercase;
 }
 
-.about {
+.section-title {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.about__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.about__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 320px;
+    border: 1px solid black;
 }
 
-.goals__img {
-    box-shadow: 3px 3px 5px 0px black;
-
+.about__title {
+    margin-top: 140px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
-.goals__title::after {
+
+.about__title::after {
     content: '';
     display: block;
     position: absolute;
-    width: 320px;
-    height: 400px;
-    background-image: url('../img/OCCNFD0.jpg');
-    background-size: cover;
-    transform: rotate(5deg);
-    z-index:-1;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 110px;
+}
+
+.cook__title::after {
+    background-image: url('../img/icons8-%D0%B3%D1%83%D0%B0%D0%BA%D0%B0%D0%BC%D0%BE%D0%BB%D0%B5-100.png');
 }
