@@ -13,7 +13,12 @@ h1 {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
 
 a {
     color: white;
@@ -25,7 +30,7 @@ ul {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -70,7 +75,7 @@ header {
 
 .title__profession {
     font-size: 22px;
-    font-family: "Raleway"
+    font-family: "Raleway", sans-serif;
 }
 
 .title__name {
@@ -83,31 +88,47 @@ header {
 .section-title {
     margin-top: 50px;
     font-size: 25px;
+    font-weight: 400;
     text-align: center;
 }
 
+.about__section-title {
+    margin-top: 100px;
+}
+
+.section-title::before {
+    content: '';
+    display: block;
+    margin: 0 auto 50px;
+    width: 95%;
+    height: 1px;
+    background-color: rgba(26, 26, 26, .2);
+}
+
+.about__section-title::before {
+    display: none;
+}
+
 .about__list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
 }
 
 .about__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
     margin-bottom: 30px;
-    max-width: 320px;
-    border: 1px solid black;
+    margin: 0 auto 30px auto;
+    width: 320px;
 }
 
 .about__title {
     margin-top: 140px;
-    font-size: 16px;
     text-transform: uppercase;
-    font-weight: 400;
 }
 
 .about__title::after {
@@ -122,4 +143,118 @@ header {
 
 .cook__title::after {
     background-image: url('../img/icons8-%D0%B3%D1%83%D0%B0%D0%BA%D0%B0%D0%BC%D0%BE%D0%BB%D0%B5-100.png');
+}
+
+.travel__title::after {
+    background-image: url('../img/icons8-%D0%B2%D0%BE%D0%BA%D1%80%D1%83%D0%B3-%D1%81%D0%B2%D0%B5%D1%82%D0%B0-100.png');
+}
+
+.sport__title::after {
+    background-image: url('../img/icons8-%D0%BA%D0%B0%D0%B9%D1%82%D1%81%D0%B5%D1%80%D1%84%D0%B8%D0%BD%D0%B3-100.png');
+}
+
+.bartender__title::after {
+    background-image: url('../img/icons8-%D0%BA%D0%BE%D0%BA%D1%82%D0%B5%D0%B9%D0%BB%D1%8C-100.png');
+}
+
+.about__text {
+    margin-top: 20px;
+    padding: 0 10px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 280px;
+    margin: 30px auto;
+    padding: 10px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px -2px black;
+
+}
+
+
+.skills-name {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 90%;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.skills__title {
+    margin-top: 140px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills__title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 25px;
+    right: 90px
+}
+
+.title-web::after {
+    background-image: url(../img/icons8-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-3-100.png);
+}
+
+.title-frontend::after {
+    background-image: url(../img/icons8-%D0%BA%D0%BE%D0%B4-100.png);
+}
+
+.title-design::after {
+    background-image: url(../img/icons8-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-100.png);
+}
+
+.title-framework::after {
+    background-image: url(../img/icons8-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9-100.png);
+}
+
+.progress {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.progress__cell {
+    display: block;
+    height: 10px;
+    background-color: #f7f7f9;
+    margin-right: 2px;
+}
+
+.portfolio__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:30px;
+}
+
+.portfolio__img {
+    margin:0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.portfolio__information {
+    margin: 0 auto;
+	width:80%;
 }
