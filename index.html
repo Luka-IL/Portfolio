@@ -19,43 +19,54 @@
     <header>
         <div class="header__top">
             <a href="" class="header__logo"></a>
-            <nav class='header__navigation'>
-                <a class='navigation__link' href="">Обо мне</a>
-                <a class='navigation__link' href="">Портфолио</a>
-                <a class='navigation__link' href="">Навыки</a>
-                <a class='navigation__link' href="">Контакты</a>
+            <div class="burger-menu" id="burger">
+                <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+                <label for="checkbox1">
+                    <div class="hamburger hamburger1">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+            </div>
+            <nav class='header__navigation navigation' id="navigation">
+                <a class='navigation__link' href="#about">Обо мне</a>
+                <a class='navigation__link' href="#portfolio">Портфолио</a>
+                <a class='navigation__link' href="#skills">Навыки</a>
+                <a class='navigation__link' href="#contacts">Контакты</a>
             </nav>
         </div>
         <div class="header__title">
             <p class="title__profession">Frontend Developer</p>
             <h1 class="title__name">Ilya Lukichev</h1>
-            <button class="title__btn">Контакты</button>
+            <button class="title__btn" id='btn' data-set="#contacts">Контакты</button>
         </div>
     </header>
     <main>
         <div class="container">
-            <section class="about">
+            <section class="about" id="about">
                 <h2 class='about__section-title section-title'>Несколько фактов о себе</h2>
                 <ul class="about__list">
                     <li class="about__item travel">
                         <h3 class="about__title travel__title">Немного путешественник</h3>
-                        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat vel natus adipisci modi dolores vitae earum! Molestiae.</p>
+                        <p class="about__text">Ну все мы переодически путешественники, для кого-то сходить в магазин уже целое приключение. Но а я смог выбраться чуть дальше, и каким-то образом посетил 12 стран.</p>
                     </li>
                     <li class="about__item cook">
                         <h3 class="about__title cook__title">Чуть-чуть повар</h3>
-                        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit natus ad ea rerum impedit, a laboriosam, at placeat quo blanditiis</p>
+                        <p class="about__text">"Если уж мы столько времени уделяем процессу потребления пищи, то почему бы это не делать красиво." - подумал как-то я и начал творить.</p>
                     </li>
                     <li class="about__item barthender">
                         <h3 class="about__title bartender__title">Капельку бармен</h3>
-                        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aspernatur voluptatibus repudiandae vel, fuga similique mollitia natus praesentium soluta ducimus magni porro</p>
+                        <p class="about__text">Только по выходным... И только с друзьями... Ну еще судьба меня свела с этим "забористым" делом, что даже пришлось ходить по ресторанам и проверять качество напитков (без фанатизма).</p>
                     </li>
                     <li class="about__item sport">
                         <h3 class="about__title sport__title">Слегка спортсмен</h3>
-                        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corrupti quasi a? Officiis illo aliquid impedit a ab magnam eaque.</p>
+                        <p class="about__text">Как то попробовал встать на сноуборд, и понеслось: кайтборд, вейкборд, водные лыжи, сёрфинг, скейтборд... Ну и еженедельные тренировки естественно.</p>
                     </li>
                 </ul>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h2 class="skills__section-title section-title">Умения и навыки</h2>
                 <ul class="skills__list">
                     <li class="skills__item">
@@ -63,13 +74,28 @@
                         <div class="skills-name">
                             <span>Javascript</span>
                             <div class="progress progress_js">
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
+                            </div>
+                        </div>
+                        <div class="skills-name">
+                            <span>JQuery</span>
+                            <div class="progress progress_jquery">
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
@@ -78,47 +104,48 @@
                         <div class="skills-name">
                             <span>Git</span>
                             <div class="progress progress_git">
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                             </div>
                         </div>
+                        <p class="skills__text">Так же немного познакомился с gulp, использовал его для компиляции SCSS. На данный момент начал изучать Vue.js</p>
                     </li>
                     <li class="skills__item">
                         <h3 class="skills__title title-frontend">Frontend разработка</h3>
                         <div class="skills-name">
                             <span>HTML</span>
                             <div class="progress progress_html">
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                             </div>
                         </div>
                         <div class="skills-name">
                             <span>CSS</span>
                             <div class="progress progress_css">
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                             </div>
@@ -126,11 +153,26 @@
                         <div class="skills-name">
                             <span>SASS</span>
                             <div class="progress progress_sass">
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
+                            </div>
+                        </div>
+                        <div class="skills-name">
+                            <span>Bootstrap</span>
+                            <div class="progress progress_bootstrap">
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
@@ -138,16 +180,17 @@
                                 <div class="progress__cell"></div>
                             </div>
                         </div>
+                        <p class="skills__text">На Bootstrap практиковался только на разметке, остальной функционал еще не было возможности опробовать.</p>
                     </li>
                     <li class="skills__item">
                         <h3 class="skills__title title-design">Дизайн</h3>
                         <div class="skills-name">
                             <span>Photoshop</span>
                             <div class="progress progress_photoshop">
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
@@ -159,61 +202,29 @@
                         <div class="skills-name">
                             <span>Figma</span>
                             <div class="progress progress_figma">
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="skills__item">
-                        <h3 class="skills__title title-framework">Фреймворки и Библиотеки</h3>
-                        <div class="skills-name">
-                            <span>JQuery</span>
-                            <div class="progress progress_jquery">
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                             </div>
                         </div>
-                        <div class="skills-name">
-                            <span>Bootstrap</span>
-                            <div class="progress progress_bootstrap">
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                                <div class="progress__cell"></div>
-                            </div>
-                        </div>
+                        <p class="skills__text">На данный момент моего скила в редакторах хватает, чтобы без трудностей верстать по макетам.</p>
                     </li>
                 </ul>
             </section>
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <h2 class="section-title">Портфолио</h2>
                 <ul class="portfolio__list">
                     <li class="portfolio__item">
                         <div class="portfolio__img">
-                             <img src='img/Hlox.png' class="portfolio__img" width='300' height="360" class="img__desktop">
-                            <img src="img/iphone-Phlox_iphonexspacegrey_portrait.png" width="250" height="250" alt="Сайт на телефоне" class="img__phone">
+                            <img src='img/Hlox.png' class="portfolio__img" width='300' height="360" class="img__desktop">
+                            <img src="img/iphone-Phlox_iphonexspacegrey_portrait.png" width="250" height="250" alt="Сайт на телефоне" class="img__phone phone-phlox">
                         </div>
                         <div class="portfolio__information">
                             <h4 class='information__title'>Phlox</h4>
@@ -236,28 +247,20 @@
                         <img src='img/MoGo.png' class="portfolio__img" width='300' height="360">
                         <div class="portfolio__information">
                             <h4 class='information__title'>MoGo</h4>
-                            <p class="information__text">Симпотичный лендинг дизайн студии. Немного "оживлен" при помощи чистого JavaScript. </p>
+                            <p class="information__text">Симпатичный лендинг дизайн студии. Немного "оживлен" при помощи чистого JavaScript. </p>
                             <div class="information__tools"><span class='tools__title'>Что использовал:</span><span> HTML/CSS, JS</span></div>
                         </div>
                     </li>
                     <li class="portfolio__item">
-                        <div class="portfolio__img"></div>
+                        <img src='img/Fly-Shoot.png' class="portfolio__img" width='521' height="250">
                         <div class="portfolio__information">
                             <h4 class='information__title'>JS</h4>
                             <p class="information__text">Так же писал игры и простые приложения на чистом JS, с целью отточить навыки работы с DOM-элементами, массивами, функциями и алгоритмами.</p>
                         </div>
                     </li>
-                    <li class="portfolio__item">
-                        <div class="portfolio__img"></div>
-                        <div class="portfolio__information">
-                            <h4 class='information__title'>Lorem</h4>
-                            <p class="information__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis magnam eveniet vitae, dolor repellat modi optio iure sint quis veniam porro provident quam nemo, laboriosam eius quod distinctio qui?</p>
-                            <p class="information__tools">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis provident aperiam nobis hic culpa minus magni, laudantium velit in quos dolorem tempore dicta vitae! Reiciendis, dolor, optio. Quod, veniam dolore!</p>
-                        </div>
-                    </li>
                 </ul>
             </section>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <h2 class="section-title">Контакты</h2>
                 <div class="contacts-container">
                     <div class="contacts__details">
@@ -265,30 +268,29 @@
                         <div class="details__email details"><span>Email</span><span>shpilli.villius@gmail.com</span></div>
                         <div class="details__social details"><span>Social</span>
                             <div class="social__icons">
-                                <span class="social__item social__inst"></span>
-                                <span class="social__item social__vk"></span>
-                                <span class="social__item social__git"></span>
+                                <a href='https://www.instagram.com/lukichev.ilya/' class="social__item social__inst"></a>
+                                <a href='https://vk.com/id6517855' class="social__item social__vk"></a>
+                                <a href='https://github.com/Luka-IL' class="social__item social__git"></a>
                             </div>
                         </div>
                     </div>
-                    <img src="" alt="" width="215" height="215" class="contacts__img">
+                    <img src="img/pGKSBP_ylPo.jpg" alt="My photo" width="215" height="215" class="contacts__img">
                 </div>
             </section>
         </div>
     </main>
     <footer>
         <a href="" class="footer__logo"></a>
-        <nav class="footer__navigation">
-            <a class='navigation__link footer__link' href="">Обо мне</a>
-            <a class='navigation__link footer__link' href="">Портфолио</a>
-            <a class='navigation__link footer__link' href="">Навыки</a>
-            <a class='navigation__link footer__link' href="">Контакты</a>
+        <nav class="footer__navigation navigation">
+            <a class='navigation__link footer__link' href="#about">Обо мне</a>
+            <a class='navigation__link footer__link' href="#portfolio">Портфолио</a>
+            <a class='navigation__link footer__link' href="#skills">Навыки</a>
+            <a class='navigation__link footer__link' href="#contacts">Контакты</a>
         </nav>
-        <ul class="footer__social">
-            <li class="footer__icon social__inst"></li>
-            <li class="footer__icon social__vk"></li>
-            <li class="footer__icon social__git"></li>
-        </ul>
         <p class="footer__copyright">© 2020 Ilya Lukichev.</p>
     </footer>
-</body></html>
+    <script src='js/jquery-3.5.1.min.js'></script>
+    <script src='js/script.js'></script>
+</body>
+
+</html>
