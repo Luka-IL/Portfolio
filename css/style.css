@@ -85,6 +85,7 @@ header {
     height: 30px;
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 
 .hamburger .bar {
@@ -457,6 +458,15 @@ header {
 .tools__title {
     font-weight: 700;
     margin-bottom: 10px;
+}
+
+.information__link {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 400;
+	color: black;
 }
 
 .contacts-container {
