@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    
+    //Scroll
+    
     $(".navigation").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
@@ -16,6 +19,8 @@ $(document).ready(function () {
             scrollTop: top
         }, 1000);
     });
+    
+    //Burger menu
     
     $('#checkbox1').on("click", function(){
         $('#navigation').toggleClass('display_flex');
