@@ -1,7 +1,9 @@
 $(document).ready(function () {
-    
+
     //Scroll
-    
+
+    let scroll = true;
+
     $(".navigation").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
@@ -10,7 +12,7 @@ $(document).ready(function () {
             scrollTop: top
         }, 1000);
     });
-    
+
     $("#btn").on("click", function (event) {
         event.preventDefault();
         var id = $(this).attr('data-set'),
@@ -19,16 +21,25 @@ $(document).ready(function () {
             scrollTop: top
         }, 1000);
     });
-    
+
     //Burger menu
-    
-    $('#checkbox1').on("click", function(){
+
+    $('#checkbox1').on('click', function () {
         $('#navigation').toggleClass('display_flex');
-        $('body').toggleClass('overflow_hidden')
+        if (scroll === true) {
+            scrollLock.disablePageScroll();
+            scroll = false
+        } else {
+            scrollLock.enablePageScroll();
+            scroll = true
+        };
     })
-    $('.navigation__link').on('click', function() {
+
+    $('.navigation__link').on('click', function () {
         $('#navigation').removeClass('display_flex');
-        $('body').removeClass('overflow_hidden')
+        $('#checkbox1').prop('checked', false);
+        scrollLock.enablePageScroll();
+        scroll = true;
     })
 
 })
