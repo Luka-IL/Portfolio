@@ -1,0 +1,25 @@
+{
+  "name": "scroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luka-IL/Hlox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luka-IL/Hlox/issues"
+  },
+  "homepage": "https://github.com/Luka-IL/Hlox#readme",
+  "dependencies": {
+    "gsap": "^3.3.0",
+    "jquery": "^3.5.1",
+    "scroll-lock": "^2.1.4",
+    "scrollmagic": "^2.0.7"
+  }
+}
