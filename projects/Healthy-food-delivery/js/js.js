@@ -77,28 +77,36 @@ $(document).ready(function () {
     });
 
     // Бургер меню
-
+    
     let wrapperMenu = $('.navigation-burger-menu');
-
+    let scroll = true;
+    
     wrapperMenu.on('click', function () {
         wrapperMenu.toggleClass('open');
 
         //Выпадающая навигация 
 
         $('.header-navigation-list').toggleClass('nav-block');
-        $('body').toggleClass('body-overflow');
         $('.header-navigation-title').toggleClass('title-color-white');
         $('.line-menu').toggleClass('line-menu-background');
+        if (scroll === true) {
+            scrollLock.disablePageScroll();
+            scroll = false
+        } else {
+            scrollLock.enablePageScroll();
+            scroll = true
+        };
     })
 
 
 
     $('#menu a').on('click', function () {
         $('.header-navigation-list').removeClass('nav-block');
-        $('body').removeClass('body-overflow');
         $('.header-navigation-title').removeClass('title-color-white');
         $('.line-menu').removeClass('line-menu-background');
         wrapperMenu.removeClass('open');
+        scrollLock.enablePageScroll();
+        scroll = true;
     })
 
     //Карусель в header 
