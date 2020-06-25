@@ -8,6 +8,10 @@ $(document).ready(function () {
     let navigationMenu = $('.header__navigation');
     let body = $('body');
     let scroll = true;
+    
+    $('.agency').css('opacity', '1');
+    $('header').css('opacity', '1');
+    $('.agency__link').css('opacity', '1')       
 
     wrapperMenu.on('click', function () {
         wrapperMenu.toggleClass('open')
