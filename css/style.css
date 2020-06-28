@@ -81,7 +81,7 @@ header {
 }
 
 .hamburger {
-    margin-right: 40px;
+    margin-right: 30px;
     width: 30px;
     height: 30px;
     position: relative;
@@ -292,6 +292,7 @@ header {
 
 .about__section-title {
     margin-top: 100px;
+    padding: 0 15px;
 }
 
 .section-title::before {
@@ -310,7 +311,7 @@ header {
 .about__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-gap: 25px;
     margin-top: 70px;
 }
 
@@ -374,6 +375,7 @@ header {
     text-align: center;
 }
 
+
 .skills__section-title {
     margin: 0 5px;
 }
@@ -394,14 +396,16 @@ header {
     margin: 30px 10px;
     padding: 5px 5px 20px;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px 0px black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 4px 0px black;
     transition: all 0.5s;
 }
 
 .skills__item:hover {
     transform: translate(-3px, -3px);
     box-shadow: 4px 4px 5px 2px black;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .skills-name {
@@ -496,7 +500,7 @@ header {
     display: flex;
     justify-content: space-around;
     overflow-x: hidden;
-    padding: 20px 0;
+    padding: 30px 0;
     width: 100%;
     margin-top: 90px;
 }
@@ -594,7 +598,7 @@ header {
 }
 
 .information__title {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .information__text {
@@ -613,12 +617,28 @@ header {
 }
 
 .information__link {
-    display: block;
-    margin-top: 20px;
-    font-size: 18px;
-    font-family: cursive;
-    font-weight: 400;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #3a3a3a;
+    transition: all 0.3s
+}
+
+.information__link:hover {
+    transform: scale(1.15);
+}
+
+.link-phlox:hover {
     color: black;
+}
+
+.link-food:hover {
+    color: #27ae60
+}
+
+.link-mogo:hover {
+    color: rgba(232, 129, 131, .85)
 }
 
 .contacts-container {
@@ -627,7 +647,7 @@ header {
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 10px 30px 0;
 }
 
 @media(max-width:425px) {
@@ -650,6 +670,10 @@ header {
 
 .details span:nth-child(1) {
     font-weight: 700;
+}
+
+.details span:nth-child(2) {
+    color: black;
 }
 
 .social__item {
@@ -693,7 +717,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
     background-color: black;
     color: rgba(255, 255, 255, .4);
 }
