@@ -139,8 +139,6 @@ header {
     width: 41px;
 }
 
-/*end*/
-
 .header__navigation {
     position: absolute;
     display: none;
@@ -291,7 +289,7 @@ header {
 }
 
 .about__section-title {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 0 15px;
 }
 
@@ -304,13 +302,9 @@ header {
     background-color: rgba(26, 26, 26, .2);
 }
 
-.about__section-title::before {
-    display: none;
-}
-
 .about__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
     margin-top: 70px;
 }
@@ -337,12 +331,14 @@ header {
     margin: 0 auto 30px auto;
 }
 
-.about__title {
-    margin-top: 140px;
-    text-transform: uppercase;
+.about__text {
+    margin-top: 150px;
+    padding: 0 10px;
+    line-height: 22px;
+    text-align: center;
 }
 
-.about__title::after {
+.about__text::after {
     content: '';
     display: block;
     position: absolute;
@@ -352,27 +348,16 @@ header {
     left: calc(50% - 50px);
 }
 
-.cook__title::after {
-    background-image: url('../img/icons8-%D0%B3%D1%83%D0%B0%D0%BA%D0%B0%D0%BC%D0%BE%D0%BB%D0%B5-100.png');
+.it__text::after {
+    background-image: url('../img/icons8-personal-growth-100.png');
 }
 
-.travel__title::after {
-    background-image: url('../img/icons8-%D0%B2%D0%BE%D0%BA%D1%80%D1%83%D0%B3-%D1%81%D0%B2%D0%B5%D1%82%D0%B0-100.png');
+.soft__text::after {
+    background-image: url('../img/icons8-agree-100.png');
 }
 
-.sport__title::after {
-    background-image: url('../img/icons8-%D0%BA%D0%B0%D0%B9%D1%82%D1%81%D0%B5%D1%80%D1%84%D0%B8%D0%BD%D0%B3-100.png');
-}
-
-.bartender__title::after {
-    background-image: url('../img/icons8-%D0%BA%D0%BE%D0%BA%D1%82%D0%B5%D0%B9%D0%BB%D1%8C-100.png');
-}
-
-.about__text {
-    margin-top: 20px;
-    padding: 0 10px;
-    line-height: 22px;
-    text-align: center;
+.team__text::after {
+    background-image: url('../img/icons8-people-working-together-100.png');
 }
 
 
@@ -399,13 +384,6 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 4px 0px black;
     transition: all 0.5s;
-}
-
-.skills__item:hover {
-    transform: translate(-3px, -3px);
-    box-shadow: 4px 4px 5px 2px black;
-    background-image: none;
-    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .skills-name {
@@ -464,10 +442,6 @@ header {
     transition: all 0.5s;
 }
 
-.skills__item:hover > .skills-name > .progress > .progress__cell {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 .cell_active {
     background-color: black;
 }
@@ -488,6 +462,13 @@ header {
 
 .skills__text:hover {
     opacity: 1;
+}
+
+.certificates__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 65px;
 }
 
 .portfolio__list {
@@ -627,6 +608,14 @@ header {
 
 .information__link:hover {
     transform: scale(1.15);
+}
+
+.link-cities:hover {
+    color: #4481c3;
+}
+
+.link-trip:hover {
+    color: #0d8ae4;
 }
 
 .link-phlox:hover {

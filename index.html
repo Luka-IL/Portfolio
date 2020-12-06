@@ -45,27 +45,6 @@
     </header>
     <main>
         <div class="container">
-            <section class="about" id="about">
-                <h2 class='about__section-title section-title'>Несколько фактов о себе</h2>
-                <ul class="about__list">
-                    <li class="about__item travel">
-                        <h3 class="about__title travel__title">Немного путешественник</h3>
-                        <p class="about__text">Все мы периодически путешественники, для кого-то сходить в магазин уже целое приключение. Я в свою очередь смог выбраться чуть дальше, и каким-то образом посетил 12 стран.</p>
-                    </li>
-                    <li class="about__item cook">
-                        <h3 class="about__title cook__title">Чуть-чуть повар</h3>
-                        <p class="about__text">"Если уж мы столько времени уделяем процессу потребления пищи, то почему бы это не делать красиво." - подумал как-то я и начал творить.</p>
-                    </li>
-                    <li class="about__item barthender">
-                        <h3 class="about__title bartender__title">Капельку бармен</h3>
-                        <p class="about__text">Только по выходным... И только с друзьями... А еще судьба меня свела с этим "забористым" делом, дала должность "территориального менеджера по бару" и заставила ходить по ресторанам и проверять качество напитков (без фанатизма).</p>
-                    </li>
-                    <li class="about__item sport">
-                        <h3 class="about__title sport__title">Слегка спортсмен</h3>
-                        <p class="about__text">Как то попробовал встать на сноуборд, и понеслось: кайтборд, вейкборд, водные лыжи, сёрфинг, скейтборд... В общем летаю на всем, что еще не успели гвоздями приколотить.</p>
-                    </li>
-                </ul>
-            </section>
             <section class="skills" id="skills">
                 <h2 class="skills__section-title section-title">Умения и навыки</h2>
                 <ul class="skills__list">
@@ -81,7 +60,22 @@
                                 <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
+                            </div>
+                        </div>
+                        <div class="skills-name">
+                            <span>React</span>
+                            <div class="progress progress_js">
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                             </div>
@@ -110,13 +104,27 @@
                                 <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell"></div>
+                                <div class="progress__cell"></div>
+                                <div class="progress__cell"></div>
+                            </div>
+                        </div>
+                        <div class="skills-name">
+                            <span>Webpack</span>
+                            <div class="progress progress_git">
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
+                                <div class="progress__cell cell_active"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                                 <div class="progress__cell"></div>
                             </div>
                         </div>
-                        <p class="skills__text">Так же немного познакомился с gulp, использовал его для компиляции SCSS. На данный момент начал изучать Vue.js</p>
                     </li>
                     <li class="skills__item">
                         <h3 class="skills__title title-frontend">Frontend разработка</h3>
@@ -180,7 +188,6 @@
                                 <div class="progress__cell"></div>
                             </div>
                         </div>
-                        <p class="skills__text">На Bootstrap практиковался только на разметке, остальной функционал еще не было возможности опробовать.<br> В последних своих проектах, использовал Бэм-методологию для именования классов.</p>
                     </li>
                     <li class="skills__item">
                         <h3 class="skills__title title-design">Дизайн</h3>
@@ -214,13 +221,45 @@
                                 <div class="progress__cell"></div>
                             </div>
                         </div>
-                        <p class="skills__text">На данный момент моего скила в редакторах хватает, чтобы без трудностей верстать по макетам.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="certificates" id="certificates">
+                <h2 class="section-title">Сертификаты</h2>
+                <ul class="certificates__list">
+                    <li class="certificates__image">
+                        <img src="img/certificate.png" alt="certificate JS" width='260' height="360">
+                    </li>
+                    <li class="certificates__image">
+                        <img src="img/certificate-react.png" alt="certificate JS" width='260' height="360">
                     </li>
                 </ul>
             </section>
             <section class="portfolio" id="portfolio">
                 <h2 class="section-title">Портфолио</h2>
                 <ul class="portfolio__list">
+                    <li class="portfolio__item">
+                        <div class="portfolio__img">
+                            <img src='img/Six-cities-img.png' class="portfolio__img" width='300' height="360" class="img__desktop">
+                        </div>
+                        <div class="portfolio__information">
+                            <h4 class='information__title'>Six Cities</h4>
+                            <p class="information__text">Cервис для путешественников, не желающих переплачивать за аренду жилья. Выбирайте один из шести популярных городов для путешествий и получайте актуальный список предложений по аренде. Подробная информация о жилье, показ объекта на карте, а также лаконичный интерфейс сервиса помогут быстро выбрать оптимальное предложение. </p>
+                            <div class="information__tools"><span class='tools__title'>Что использовал:</span><span> React, React Router, Redux, history, webpack, middlewares, redux-thunk, axios, jest, enzyme, leaflet, file-loader.</span> </div>
+                            <a href="https://six-cities-l62kackwu.vercel.app/" class="information__link link-cities">Ссылка</a>
+                        </div>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__img">
+                            <img src='img/Big-trip-img.png' class="portfolio__img" width='300' height="360" class="img__desktop">
+                        </div>
+                        <div class="portfolio__information">
+                            <h4 class='information__title'>Big Trip</h4>
+                            <p class="information__text">Cовременный cервис, который помогает детально спланировать маршрут поездки, рассчитать стоимость путешествия и получить информацию о достопримечательностях. Минималистичный интерфейс не даст повода отвлечься и сфокусирует внимание на планировании путешествия. </p>
+                            <div class="information__tools"><span class='tools__title'>Что использовал:</span><span> Webpack, ServiceWorkers, REST API, chart, flatpickr</span> </div>
+                            <a href="big-trip-theta.vercel.app" class="information__link link-trip">Ссылка</a>
+                        </div>
+                    </li>
                     <li class="portfolio__item">
                         <div class="portfolio__img">
                             <img src='img/Hlox.png' class="portfolio__img" width='300' height="360" class="img__desktop">
@@ -254,12 +293,19 @@
                             <a href="projects/MoGo/MoGo.html" class="information__link link-mogo">Ссылка</a>
                         </div>
                     </li>
-                    <li class="portfolio__item portfolio__fly-shoot">
-                        <img src='img/Fly-Shoot.png' class="portfolio__img img__fly-shoot" width='521' height="250">
-                        <div class="portfolio__information">
-                            <h4 class='information__title'>JS</h4>
-                            <p class="information__text">Так же писал игры и простые приложения на чистом JS, с целью отточить навыки работы с DOM-элементами, массивами, функциями и алгоритмами.</p>
-                        </div>
+                </ul>
+            </section>
+            <section class="about" id="about">
+                <h2 class='about__section-title section-title'>О себе</h2>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <p class="about__text it__text">Хочу расти и развиваться в сфере IT, могу и готов самостоятельно изучать большие объемы информации, чтобы повышать hard skills.</p>
+                    </li>
+                    <li class="about__item">
+                        <p class="about__text soft__text">Очень развиты soft skills: умею найти общий язык с любым человеком, отношусь к сложностям с интересом и позитивом.</p>
+                    </li>
+                    <li class="about__item">
+                        <p class="about__text team__text">Командный игрок, люблю работать в коллективе, при этом не нуждаюсь в постоянном контроле, ответственно выполняю свои задачи и проявляю инициативу там, где вижу способы улучшить проект.</p>
                     </li>
                 </ul>
             </section>
