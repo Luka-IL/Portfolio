@@ -468,7 +468,11 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 65px;
+    margin-top: 50px;
+}
+
+.certificates__image {
+    margin-top: 15px;
 }
 
 .portfolio__list {
@@ -492,16 +496,11 @@ header {
 
 @media (max-width:700px) {
     .portfolio__item {
+        margin-top: 40px;
         flex-direction: column;
     }
 
     .portfolio__item:nth-child(2n+1) {
-        flex-direction: column;
-    }
-}
-
-@media (max-width:900px) {
-    .portfolio__fly-shoot {
         flex-direction: column;
     }
 }
@@ -513,6 +512,20 @@ header {
     box-shadow: 0 0 8px 0 black;
 }
 
+.portfolio__title {
+    visibility: hidden;
+}
+@media (max-width:700px) {
+    .portfolio__title {
+        visibility: visible;
+        font-size: 24px;
+        text-transform: uppercase;
+        height: 600;
+        text-align: center; 
+        margin-bottom: 35px;
+    }
+}
+
 @media (max-width:450px) {
     .portfolio__img {
         max-height: 300px;
@@ -522,13 +535,6 @@ header {
     .img__desktop {
         max-width: 250px;
         max-height: 300px;
-    }
-}
-
-@media (max-width:550px) {
-    .img__fly-shoot {
-        max-width: 320px;
-        max-height: 154px;
     }
 }
 
@@ -562,17 +568,8 @@ header {
     width: 38%;
 }
 
-@media (max-width:900px) {
-    .portfolio__fly-shoot .portfolio__information {
-        margin-top: 40px;
-        width: 90%;
-        text-align: center;
-    }
-}
-
 @media (max-width:700px) {
     .portfolio__information {
-        margin-top: 40px;
         width: 90%;
         text-align: center;
     }
@@ -580,6 +577,12 @@ header {
 
 .information__title {
     font-size: 24px;
+}
+
+@media (max-width:700px) {
+    .information__title {
+        visibility: hidden;
+    }
 }
 
 .information__text {
@@ -590,6 +593,12 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+}
+
+@media (max-width:700px) {
+    .information__tools {
+        margin-top: 15px;
+    }
 }
 
 .tools__title {
@@ -608,6 +617,13 @@ header {
 
 .information__link:hover {
     transform: scale(1.15);
+}
+
+
+@media(max-width:550px) {
+    .information__link {
+        margin-top: 25px;
+    }
 }
 
 .link-cities:hover {
