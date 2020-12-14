@@ -466,14 +466,25 @@ header {
 
 .certificates__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
-.certificates__image {
+.certificates__item {
+    width: 260px;
+    height: 360px;
     margin-top: 15px;
+    padding: 1px;
+    justify-content: center;
+    box-shadow: 2px 2px 8px 2px black;
+    border: 4px solid rgb(71, 71, 71);
 }
+
+.certificates__item:nth-child(2) {
+    margin-left: 60px;
+}
+
 
 .portfolio__list {
     display: flex;
@@ -509,7 +520,26 @@ header {
     position: relative;
     max-height: 360px;
     margin: 0 auto;
-    box-shadow: 0 0 8px 0 black;
+}
+
+.portfolio__cities-image{
+    box-shadow: 0 0 9px 1px #4481c3;
+}
+
+.portfolio__trip-image{
+    box-shadow: 0 0 9px 1px #0d8ae4;
+}
+
+.portfolio__hlox-image{
+    box-shadow: 0 0 10px 1px black;
+}
+
+.portfolio__food-image{
+    box-shadow: 0 0 10px 1px #27ae60;
+}
+
+.portfolio__mogo-image{
+    box-shadow: 0 0 10px 1px rgba(232, 129, 131, .85);
 }
 
 .portfolio__title {
