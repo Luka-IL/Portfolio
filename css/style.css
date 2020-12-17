@@ -474,7 +474,7 @@ header {
 .certificates__item {
     width: 260px;
     height: 360px;
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 1px;
     justify-content: center;
     box-shadow: 2px 2px 8px 2px black;
@@ -485,6 +485,11 @@ header {
     margin-left: 60px;
 }
 
+@media (max-width:700px) {
+    .certificates__item:nth-child(2) {
+        margin-left: 0;
+    }
+}
 
 .portfolio__list {
     display: flex;
@@ -523,7 +528,7 @@ header {
 }
 
 .portfolio__cities-image{
-    box-shadow: 0 0 9px 1px #4481c3;
+    box-shadow: 0 0 9px 1px #565555;
 }
 
 .portfolio__trip-image{
