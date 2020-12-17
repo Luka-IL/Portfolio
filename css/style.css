@@ -316,7 +316,7 @@ header {
 
 .my-information__age{
     margin-top:10px;
-    font-size:14px;
+    font-size:16px;
 }
 
 @media (max-width:700px) {
@@ -331,8 +331,7 @@ header {
     }
 
     .my-information__age{
-        line-height: 2px;
-        font-size:10px;
+        font-size: 10px;
     }
 }
 
@@ -596,11 +595,11 @@ header {
 }
 
 .portfolio__title {
-    visibility: hidden;
+    display: none
 }
 @media (max-width:700px) {
     .portfolio__title {
-        visibility: visible;
+        display: inline;
         font-size: 24px;
         text-transform: uppercase;
         height: 600;
@@ -744,15 +743,19 @@ header {
     }
 }
 
-@media(max-width:550px) {
+@media(max-width:700px) {
     .contacts__details {
         padding-top: 30px;
     }
 }
 
+.contacts__details {
+    margin: 0 10px
+}
+
 .details {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     margin-bottom: 15px;
 }
 
@@ -790,14 +793,23 @@ header {
     background-image: url('../img/icons8-github-50.png');
 }
 
-.contacts__img {
+.my-photo {
     border-radius: 50%;
 }
 
 @media(max-width:700px) {
-    .contacts__img {
+    .details {
+        font-size: 14px;
+    }
+    .my-photo {
         max-height: 115px;
         max-width: 115px;
+    }
+}
+
+@media(max-width:550px) {
+    .contacts__img {
+        display: none;
     }
 }
 
