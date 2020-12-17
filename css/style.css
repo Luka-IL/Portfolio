@@ -315,8 +315,9 @@ header {
 }
 
 .my-information__age{
+    font-family: 'Montserrat', sans-serif;
     margin-top:10px;
-    font-size:16px;
+    font-size:14px;
 }
 
 @media (max-width:700px) {
@@ -737,7 +738,7 @@ header {
     padding: 0 10px 30px 0;
 }
 
-@media(max-width:425px) {
+@media(max-width:550px) {
     .contacts-container {
         flex-direction: column;
     }
@@ -764,6 +765,7 @@ header {
 }
 
 .details span:nth-child(2) {
+    font-family: 'Courier New', Courier, monospace;
     color: black;
 }
 
