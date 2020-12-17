@@ -57,6 +57,8 @@ header {
     align-items: center;
     margin-top: 10px;
     font-size: 16px;
+    transition: all 1.4s ease-in-out;
+    opacity: 0;
 }
 
 .header__logo {
@@ -179,6 +181,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 1.4s ease-in-out;
+    opacity: 0;
 }
 
 .title__profession {
@@ -286,6 +290,50 @@ header {
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+}
+
+.my-information {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 20px 20px 40px 20px;
+}
+
+.my-information__title {
+    font-size: 24px;
+}
+
+.my-information__list{
+    margin-top:40px;
+    margin-right: 90px;
+    font-size: 16px;
+}
+
+.my-information__item{
+    margin-top: 7px;
+    position: relative;
+}
+
+.my-information__age{
+    margin-top:10px;
+    font-size:14px;
+}
+
+@media (max-width:700px) {
+    .my-information__title {
+        font-size: 20px;
+    }
+
+    .my-information__list{
+        font-size:12px;
+        margin-right:30px;
+        margin-top: 20px;
+    }
+
+    .my-information__age{
+        line-height: 2px;
+        font-size:10px;
+    }
 }
 
 .about__section-title {
@@ -746,7 +794,7 @@ header {
     border-radius: 50%;
 }
 
-@media(max-width:550px) {
+@media(max-width:700px) {
     .contacts__img {
         max-height: 115px;
         max-width: 115px;
@@ -795,4 +843,8 @@ footer {
 .footer__copyright {
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.opacity-visibility {
+    opacity: 100;
 }

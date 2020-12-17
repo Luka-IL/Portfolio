@@ -42,4 +42,10 @@ $(document).ready(function () {
         scroll = true;
     })
 
+    //Visibility header
+
+    $('.header__top').addClass('opacity-visibility');
+    $('.header__title').addClass('opacity-visibility');
+
+
 })
