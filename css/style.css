@@ -815,6 +815,13 @@ header {
     }
 }
 
+a[x-apple-data-detectors=true] {
+    color:black;
+}
+a[href^="tel:"] {
+    color: black;
+}
+
 footer {
     display: flex;
     flex-direction: column;
